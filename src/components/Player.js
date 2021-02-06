@@ -1,5 +1,5 @@
 function Player (props) {
-     const playerConditional = props.hobbies.length <= 0 ? <p>"No Hobbies Given"</p> 
+     const playerConditional = props.hobbies.length <= 0 ? <p>No Hobbies Given</p> 
      :  <li>{props.hobbies.map(hobby => {return (<li>{hobby}</li>)  })}</li>
       
 
