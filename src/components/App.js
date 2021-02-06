@@ -2,14 +2,15 @@
 import '../App.css';
 import Welcome from './Welcome'
 import {playerData} from '../data/playerData'
-import Player from './Player'
+import PlayerList from './PlayerList'
 
 function App() {
   return (
     <div className="container">
       <Welcome />
-      <Player />
-      <Player />
+      <PlayerList players={playerData} />
+      
+       
     </div>
   );
 }
