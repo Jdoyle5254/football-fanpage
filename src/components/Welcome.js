@@ -1,5 +1,20 @@
 function Welcome () {
-    return <h2> Welcome Football Fans! </h2>
+    const currentHour = new Date().getHours()
+    const message = currentHour < 5 ? "Why are your still up?" 
+                    : currentHour < 12 ? "Good Morning" 
+                    : currentHour < 18 ? "Good Afternoon" 
+                    : "Good Evening"
+    
+
+
+
+
+    return (
+        <>
+        <p>{message} Sports Fan! </p>
+        <h2> Welcome Football Fans! </h2>
+        </>
+    ) 
 }
 
 export default Welcome; 
