@@ -12,3 +12,5 @@ export const playerData = [
   { id: 5, firstName: "Justin", lastName: "Verlander", hobbies: justinHobbies, jerseyNumber: 35 },
   { id: 2, firstName: "Luis", lastName: "Garcia", hobbies: luisHobbies, jerseyNumber: 77 },
 ]
+
+// updating data so files will push up 
