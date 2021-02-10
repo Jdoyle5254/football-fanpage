@@ -4,14 +4,10 @@ function Welcome () {
                     : currentHour < 12 ? "Good Morning" 
                     : currentHour < 18 ? "Good Afternoon" 
                     : "Good Evening"
-    
-
-
-
 
     return (
         <>
-        <p>{message} Sports Fan! </p>
+        <p>{message} Sports Fans! </p>
         <h2> Welcome Football Fans! </h2>
         </>
     ) 

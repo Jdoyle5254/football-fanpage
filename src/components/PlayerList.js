@@ -2,11 +2,18 @@ import Player from './Player'
 
 function PlayerList(props){
     
-    console.log("pl", props.players)
-    
     //create a list of Player components
     const allPlayers = props.players.map(player => {
-        return <Player firstName={player.firstName} jersey={player.jerseyNumber} hobbies={player.hobbies} />
+        return (
+        <Player 
+        id={player.id} 
+        key={player.id}
+        firstName={player.firstName} 
+        lastName={player.lastName} 
+        jersey={player.jerseyNumber}
+         hobbies={player.hobbies} 
+         addFav={props.addFavorite} />)
+        
     });
     return <div> {allPlayers} </div> 
 }
