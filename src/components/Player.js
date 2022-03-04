@@ -1,4 +1,4 @@
-function Player(props) {
+export default function Player(props) {
      const playerConditional = props.hobbies.length <= 0 ? <p>No Hobbies Given</p> 
      :  <li>{props.hobbies.map(hobby => {return (<li>{hobby}</li>)  })}</li>
       
@@ -10,7 +10,7 @@ function Player(props) {
           {playerConditional}
        </ul>
 
-       <button onClick={() => props.addFavs(props.id)}>Add to Favorites</button>
+       <button onClick={() => props.addFav(props.id)}>Add to Favorites</button>
      </div>
      
  
@@ -22,7 +22,7 @@ function Player(props) {
      
 }
 
-export default Player; 
+ 
 
 // updating data so files will push up 
 

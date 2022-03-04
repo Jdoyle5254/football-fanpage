@@ -1,23 +1,25 @@
 import Player from './Player'
 
-function Favorite(props) {
-    console.log('favorites', props)
-    const favoritePlayers = props.split(',')
+export default function Favorite(props) {
+    console.log('favorites', props.favorites)
     
-    const favPlayer = favoritePlayers.map((player) => {
-        return ( 
+    const favoritePlayers = props.favorites
+    .map(player => {
+        return (
             <li>{player.firstName}</li>
-        ) })
+        )
+    })
+     
+      
 
     return (
         <div>
        
         <h2>Favorite players</h2>
-            {favPlayer}
+            {favoritePlayers}
         
         </div>
     )
 }
 
-export default Favorite; 
-
+ 

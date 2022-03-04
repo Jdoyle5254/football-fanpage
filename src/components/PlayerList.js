@@ -1,6 +1,6 @@
 import Player from './Player'
 
-function PlayerList(props){
+export default function PlayerList(props){
     
     //create a list of Player components
     const allPlayers = props.players.map(player => {
@@ -12,10 +12,10 @@ function PlayerList(props){
         lastName={player.lastName} 
         jersey={player.jerseyNumber}
         hobbies={player.hobbies} 
-        addFavs={props.addFavorite} />)
+        addFav={props.addFavorite} />)
         
     });
     return <div> {allPlayers} </div> 
 }
 
-export default PlayerList; 
+ 
