@@ -11,8 +11,8 @@ function PlayerList(props){
         firstName={player.firstName} 
         lastName={player.lastName} 
         jersey={player.jerseyNumber}
-         hobbies={player.hobbies} 
-         addFav={props.addFavorite} />)
+        hobbies={player.hobbies} 
+        addFavs={props.addFavorite} />)
         
     });
     return <div> {allPlayers} </div> 

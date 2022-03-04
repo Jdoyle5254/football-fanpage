@@ -10,7 +10,7 @@ function Player(props) {
           {playerConditional}
        </ul>
 
-       <button onClick={() => props.addFav(props.id)}>Add to Favorites</button>
+       <button onClick={() => props.addFavs(props.id)}>Add to Favorites</button>
      </div>
      
  
